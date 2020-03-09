@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Synchronise a static map with an interactive map">
+    <title>HEREMAP</title>
 
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-core-legacy.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-service-legacy.js" type="text/javascript"charset="utf-8"></script>
-
-    <title>Walk Safely</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <link rel="stylesheet" type="text/css" href="../template.css" />
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src='../test-credentials.js'></script>
+    <script type="text/javascript" src='../js-examples-rendering-helpers/iframe-height.js'></script>
 </head>
 
-<body>
-    <div style="width: 640px; height: 480px" id="mapContainer">
+<body class="text-center" id="markers-on-the-map">
+    <div class="page-header text-center"></div>
+
+    <div class="page-header text-center"></div>
+
+    <div class="card text-center" style="width: 58rem;" id="map">
+
+        <div class="card-body text-center">
+            <h5 class="card-title text-center">Mapa Interactivo</h5>
+        </div>
     </div>
 
-    <div id="root">
-        <div style="width: 640px; height: 480px" id="mapContainer"></div>
 
+    <div class="card-body text-center">
+        Visible area visualisation
     </div>
 
-    <script src="app.js"></script>
+    <div class="card text-center" id="panel_DOS"></div>
 
+    <div id="panel"></div>
+
+
+    <script type="text/javascript" src='app.js'></script>
 </body>
+
 </html>
